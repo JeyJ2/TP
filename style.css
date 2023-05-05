@@ -110,3 +110,6 @@ footer{
     }
   }
   p{color: red;}
+  p{color: red;
+  font-style: italic;}
+footer{background-color: antiquewhite;}
