@@ -1,4 +1,16 @@
 p {
     font-weight: bold;
   }
+header{
+  height: 15vh;
+  background-color: orange;
+}
+main{
+  height: 70vh;
+  background-color: khaki;
+}
+footer{
+  height: 15vh;
+  background-color: orange;
+}
   
