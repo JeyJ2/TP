@@ -1,4 +1,26 @@
 p {
     font-weight: bold;
   }
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li a {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  nav li a:hover {
+  display: flex;
+    background-color: #000;
+    color: #fff;
+  }
   
