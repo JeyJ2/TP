@@ -1,5 +1,41 @@
-p {
-    font-weight: bold;
+
+/* Style pour la barre de navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style pour le logo */
+  .nav__logo {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  
+  /* Style pour le bouton de menu */
+  .nav__menu-button {
+    display: none;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Style pour la liste des liens de navigation */
+  .nav__links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style pour chaque lien de navigation */
+  .nav__link {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #fff;
   }
 header{
   height: 15vh;
@@ -14,3 +50,40 @@ footer{
   background-color: orange;
 }
   
+  /* Style pour les liens de navigation sur petits écrans */
+  @media screen and (max-width: 600px) {
+    /* Cacher les liens de navigation */
+    .nav__links {
+      display: none;
+    }
+  
+    /* Afficher le bouton de menu */
+    .nav__menu-button {
+      display: block;
+    }
+  
+    /* Style pour le menu déroulant */
+    .nav__dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 1rem;
+    }
+  
+    /* Afficher le menu déroulant lorsque le bouton de menu est cliqué */
+    .nav__menu-button:checked + .nav__dropdown {
+      display: block;
+    }
+  
+    /* Style pour chaque lien de navigation dans le menu déroulant */
+    .nav__dropdown-link {
+      display: block;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  p{color: red;}
